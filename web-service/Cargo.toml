@@ -1,0 +1,15 @@
+[package]
+name = "rust-web-service"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+warp = "0.3"
+tokio = { version = "1", features = ["full"] }
+libc = "0.2"
+
+[profile.dev]
+debug = true
+
+[profile.release]
+debug = false
